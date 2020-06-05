@@ -1,25 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,900);
+ 
  body {
     background-color: rgb(183, 183, 252);
 	width: 75%;
-	max-width: 1920px;
+	max-width: 1024px;
     margin: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 105%;
+    
+}
+
+a {
+    color: rgb(0, 119, 113);
+    font-weight: bold;
+}
+
+
+ #top-banner {
+    background-image: url(images/backgroundimage.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    display: flex;
+
+ }
+
+ h1 {
+     color: white;
+     text-shadow: 3px 3px black;
+     align-self: flex-end;
+     text-align: center;
+     font-size: 3rem;
+     width: 100%;
+     font-family: 'Playfair Display SC', serif;
+
+ }
+
+ ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    width: 300px;
+    background-color: rgb(205, 205, 255);
+  }
+
+
+
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: normal;
+
+  }
+
+  #CSA-button:hover {
+      background-color: rgb(255, 181, 181);
+  }
+
+  #JPN-button:hover {
+    background-color: white;
+}
+
+#France-button:hover {
+    background-color: rgb(139, 147, 255);
+}
+
+#Commune-button:hover {
+    background-color: rgb(255, 181, 181);
+}
+
+#Byz-button:hover {
+    background-color: rgb(218, 147, 218);
+}
+
+#imgNote {
+    font-weight: bold;
+}
+
+.countryFlag {
+    max-width: 75px;
+    vertical-align: middle;
+}
+
+.title {
+    display: inline-block;
+}
+
+h2 {
+    vertical-align: middle;
 }
 
 figcaption {
     font-style: italic;
-    font-size: 125%;
+    font-size: 100%;
+    max-width: 95%;
+    max-width: 720px;
 }
 
 section {
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 #CSA-section {
     background-color: rgb(255, 181, 181);
+}
+
+#Japan-section {
+    background-color: white;
+}
+
+#FRKingdom-section {
+    background-color: rgb(139, 147, 255);
+}
+
+#Commune-section {
+    background-color: rgb(255, 181, 181);
+}
+
+#Byz-section {
+    background-color: rgb(218, 147, 218);
 }
 
 /* Style the Image Used to Trigger the Modal */
@@ -27,7 +135,8 @@ section {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-    max-width: 95%;
+    width: 95%;
+    max-width: 720px;
   }
   
 .myImg:hover {opacity: 0.7;}
